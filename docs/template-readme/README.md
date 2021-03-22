@@ -42,7 +42,7 @@ The template comes with a basic set of files, and projects, that will make it ea
 ### .NET Analyzers
 
 - `Directory.Build.props` For more information on `MSBuild` and how it works, please refer to the [official documentation](https://docs.microsoft.com/en-us/visualstudio/msbuild/customize-your-build?view=vs-2019#directorybuildprops-and-directorybuildtargets).
-- `stylecop.json` StyleCop Analyzers configuration file.
+- `stylecop.json` Analyzer configuration file.
 - `.editorconfig` template file used in this organization.
 
 ## Getting started
@@ -70,7 +70,7 @@ The following example, assumes that you have a new solution that is named `MyNew
     2. Rename it to fit your project name, in this case `my-new-trigger-ci.yml`.
     3. Inside the `my-new-trigger-ci.yml` file replace all the values that is prefixed with the following `TEMPLATE_REPLACE__`.
 3. Set up the continuous delivery
-    1. Duplicate the `azure-function-ci-template.yml` file located here `.github/templates/azure-function-cd-template.yml`.
+    1. Duplicate the `azure-function-cd-template.yml` file located here `.github/templates/azure-function-cd-template.yml`.
     2. Rename it to fit your project name, in this case `my-new-trigger-cd.yml`.
     3. Inside the `my-new-trigger-cd.yml` file replace all the values that is prefixed with the following `TEMPLATE_REPLACE__`.
 4. Adding your new project to the branch protection rules
