@@ -77,7 +77,7 @@ To create new .NET Function projects inside this repository, you only have to fo
 The following example, assumes that you have a new solution that is named `MyNewSolution`, and inside that an Azure HTTP Trigger named `MyNewTrigger`.
 
 1. Creating the project
-    1. Create a new folder named `MyNewSolution` inside the source folder located at the path `source`.
+    1. Create a new folder named `MyNewSolution` inside the source folder located here `../../source`.
     2. Inside the newly created folder from step 1, create your .NET solution.
     3. Create an Azure HTTP Trigger project inside the `MyNewSolution` solution named `MyNewTrigger`.
 2. Set up the continuous integration
