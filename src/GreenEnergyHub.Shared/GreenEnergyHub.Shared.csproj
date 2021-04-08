@@ -15,7 +15,7 @@ limitations under the License.
 
   <PropertyGroup>
     <OutputType>Library</OutputType>
-    <TargetFrameworks>net5.0</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1</TargetFrameworks>
     <PackageId>GreenEnergyHub.Shared</PackageId>
     <Description>Collection of helper classes</Description>
     <AssemblyName>GreenEnergyHub.Shared</AssemblyName>
