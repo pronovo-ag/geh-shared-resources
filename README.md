@@ -1,4 +1,4 @@
-# SharedResources
+# Shared Resources
 
 ## Intro
 
