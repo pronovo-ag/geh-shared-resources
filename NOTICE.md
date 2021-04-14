@@ -3,7 +3,7 @@
 ## Third-Party Licenses
 
 The Shared Resources domain relies on open source libraries.
-We recommend you read their licenses, as their terms may differ from the terms described in our [LICENSE](https://github.com/Energinet-DataHub/geh-market-roles/blob/main/LICENSE):
+We recommend you read their licenses, as their terms may differ from the terms described in our [LICENSE](https://github.com/Energinet-DataHub/geh-shared-resources/blob/main/LICENSE):
 
 | Name                                               | Version                              | Url                                                                                     | License                                                                                       |
 | -------------------------------------------------- | ------------------------------------ | --------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------- |

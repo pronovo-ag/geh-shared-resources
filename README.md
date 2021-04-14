@@ -3,7 +3,7 @@
 ## Intro
 
 This domain will contain shared components of infrastructure, as well as code which we want to "centralize".
-Initially we will work towards translating incoming ebiX message to internal CIM format.
+Initially we will work towards translating incoming ebiX messages in xml to an internal CIM format.
 
 ## Architecture
 
