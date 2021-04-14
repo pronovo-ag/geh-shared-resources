@@ -32,8 +32,11 @@ io
 microsoft
 msbuild
 nuget
+NuGet
 sqlserver
 terraform
 visualstudio
 www
 xunit
+ebiX
+CIM
