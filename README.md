@@ -8,8 +8,12 @@ This should be replaced by content that fits your domain. test
 
 ![design](ARCHITECTURE.png)
 
-## Repository origin
+## Domain Roadmap
 
-This repository was created using the Green Energy Hub template.
+## Getting Started
 
-Please read the [template documentation](./docs/template-readme/README.md) for details and introduction to the template.
+[Read here how to get started](https://github.com/Energinet-DataHub/green-energy-hub/blob/main/docs/getting-started.md).
+
+## Where can I get more help?
+
+Please see the [community documentation](https://github.com/Energinet-DataHub/green-energy-hub/blob/main/COMMUNITY.md)
