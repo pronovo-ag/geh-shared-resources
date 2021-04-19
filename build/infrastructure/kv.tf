@@ -34,7 +34,55 @@ module "kv" {
     {
       tenant_id               = data.azurerm_client_config.current.tenant_id
       object_id               = var.aggregations_domain_spn_object_id
-      secret_permissions      = ["get", "list"]
+      secret_permissions      = ["set", "get", "list"]
+      certificate_permissions = []
+      key_permissions         = []
+      storage_permissions     = []
+    },
+    {
+      tenant_id               = data.azurerm_client_config.current.tenant_id
+      object_id               = var.charges_domain_spn_object_id
+      secret_permissions      = ["set", "get", "list"]
+      certificate_permissions = []
+      key_permissions         = []
+      storage_permissions     = []
+    },
+    {
+      tenant_id               = data.azurerm_client_config.current.tenant_id
+      object_id               = var.market_roles_domain_spn_object_id
+      secret_permissions      = ["set", "get", "list"]
+      certificate_permissions = []
+      key_permissions         = []
+      storage_permissions     = []
+    },
+    {
+      tenant_id               = data.azurerm_client_config.current.tenant_id
+      object_id               = var.timeseries_domain_spn_object_id
+      secret_permissions      = ["set", "get", "list"]
+      certificate_permissions = []
+      key_permissions         = []
+      storage_permissions     = []
+    },
+    {
+      tenant_id               = data.azurerm_client_config.current.tenant_id
+      object_id               = var.metering_point_domain_spn_object_id
+      secret_permissions      = ["set", "get", "list"]
+      certificate_permissions = []
+      key_permissions         = []
+      storage_permissions     = []
+    },
+    {
+      tenant_id               = data.azurerm_client_config.current.tenant_id
+      object_id               = var.post_office_domain_spn_object_id
+      secret_permissions      = ["set", "get", "list"]
+      certificate_permissions = []
+      key_permissions         = []
+      storage_permissions     = []
+    },
+    {
+      tenant_id               = data.azurerm_client_config.current.tenant_id
+      object_id               = var.validation_reports_domain_spn_object_id
+      secret_permissions      = ["set", "get", "list"]
       certificate_permissions = []
       key_permissions         = []
       storage_permissions     = []
