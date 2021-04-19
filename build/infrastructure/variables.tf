@@ -29,3 +29,8 @@ variable "organisation" {
   type          = string
   description   = "Organisation that is running the infrastructure code"
 }
+
+variable "aggregations_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the aggregations domain service principal."
+}
