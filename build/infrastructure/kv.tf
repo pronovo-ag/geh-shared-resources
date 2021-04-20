@@ -89,3 +89,25 @@ module "kv" {
     }
   ]
 }
+
+module "kvs_db_admin_name" {
+  source        = "git::https://github.com/Energinet-DataHub/geh-terraform-modules.git//key-vault-secret?ref=1.2.0"
+  name          = "SHARED-RESOURCES-DB-ADMIN-NAME"
+  value         = local.sqlServerAdminName
+  key_vault_id  = module.kv.id
+}
+
+module "kvs_db_admin_password" {
+  source        = "git::https://github.com/Energinet-DataHub/geh-terraform-modules.git//key-vault-secret?ref=1.2.0"
+  name          = "SHARED-RESOURCES-DB-ADMIN-PASSWORD"
+  value         = random_password.sqlsrv_admin_password.result
+  key_vault_id  = module.kv.id
+}
+
+module "kvs_db_url" {
+  source        = "git::https://github.com/Energinet-DataHub/geh-terraform-modules.git//key-vault-secret?ref=1.2.0"
+  name          = "SHARED-RESOURCES-DB-URL"
+  value         = module.sqlsrv.fully_qualified_domain_name
+  key_vault_id  = module.kv.id
+  dependencies  = [module.sqlsrv.dependent_on]
+}
