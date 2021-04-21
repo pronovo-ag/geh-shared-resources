@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GreenEnergyHub.Conversion\GreenEnergyHub.Conversion.csproj" />
+  </ItemGroup>
+
+  <Import Project="../../build/Common.props" />
+
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>GreenEnergyHub.DkEbix.Tests</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+</Project>
