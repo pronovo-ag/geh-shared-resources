@@ -33,7 +33,7 @@ limitations under the License.
   
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-      <_Parameter1>GreenEnergyHub.Shared.Tests</_Parameter1>
+      <_Parameter1>GreenEnergyHub.Conversion.Tests</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
   
