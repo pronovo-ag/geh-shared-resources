@@ -48,13 +48,13 @@ namespace GreenEnergyHub.DkEbix.Parsers
 
                 if (reader.Is("Identification")) identification = await reader.ReadElementContentAsStringAsync();
                 if (reader.Is("Occurrence")) occurrence = reader.ReadElementContentAsDateTime();
-                if (reader.Is("RelatedChargeChargeInformation")) chargeTypes.Add(await ReadChargeType(reader));
+                if (reader.Is("RelatedChargeChargeInformation")) chargeTypes.Add(await ReadChargeTypeAsync(reader));
             }
 
             return null;
         }
 
-        private async Task<ChargeType> ReadChargeType(XmlReader reader)
+        private async Task<ChargeType> ReadChargeTypeAsync(XmlReader reader)
         {
             string? chargeOwnerIdentification = null;
             ChargeKind? chargeKind = null;
@@ -115,7 +115,7 @@ namespace GreenEnergyHub.DkEbix.Parsers
                 }
                 else if (reader.Is("IntervalEnergyObservation"))
                 {
-                    points.Add(await ReadPricePoint(reader));
+                    points.Add(await ReadPricePointAsync(reader));
                 }
             }
 
@@ -139,7 +139,7 @@ namespace GreenEnergyHub.DkEbix.Parsers
             return chargeType;
         }
 
-        private async Task<PricePoint> ReadPricePoint(XmlReader reader)
+        private async Task<PricePoint> ReadPricePointAsync(XmlReader reader)
         {
             int? position = null;
             double? amount = null;
@@ -157,7 +157,7 @@ namespace GreenEnergyHub.DkEbix.Parsers
             return new PricePoint(position.Value, amount.Value);
         }
 
-        private async Task<MarketDocument> ParseHeaderEnergyDocument(XmlReader reader)
+        private async Task<MarketDocument> ParseHeaderEnergyDocumentAsync(XmlReader reader)
         {
             string? identification = null;
             string? documentType = null;
