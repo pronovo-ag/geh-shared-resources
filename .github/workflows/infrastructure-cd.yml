@@ -72,6 +72,7 @@ jobs:
         uses: hashicorp/setup-terraform@v1.2.1
         with:
           terraform_wrapper: false
+          terraform_version: 0.14.10
       
       - name: Setup Python
         uses: actions/setup-python@v2
@@ -111,6 +112,13 @@ jobs:
           echo "TF_VAR_organisation=${{ env.ORGANISATION_NAME }}" >> $GITHUB_ENV
           echo "TF_VAR_project=${{ env.PROJECT_NAME }}" >> $GITHUB_ENV
           echo "TF_VAR_resource_group_name=${{ matrix.environment.long }}" >> $GITHUB_ENV
+          echo "TF_VAR_aggregations_domain_spn_object_id=${{ secrets.AGGREGATIONS_DOMAIN_SPN_OBJECT_ID }}" >> $GITHUB_ENV
+          echo "TF_VAR_charges_domain_spn_object_id=${{ secrets.CHARGES_DOMAIN_SPN_OBJECT_ID }}" >> $GITHUB_ENV
+          echo "TF_VAR_market_roles_domain_spn_object_id=${{ secrets.MARKET_ROLES_DOMAIN_SPN_OBJECT_ID }}" >> $GITHUB_ENV
+          echo "TF_VAR_timeseries_domain_spn_object_id=${{ secrets.TIMESERIES_DOMAIN_SPN_OBJECT_ID }}" >> $GITHUB_ENV
+          echo "TF_VAR_metering_point_domain_spn_object_id=${{ secrets.METERING_POINT_DOMAIN_SPN_OBJECT_ID }}" >> $GITHUB_ENV
+          echo "TF_VAR_post_office_domain_spn_object_id=${{ secrets.POST_OFFICE_DOMAIN_SPN_OBJECT_ID }}" >> $GITHUB_ENV
+          echo "TF_VAR_validation_reports_domain_spn_object_id=${{ secrets.VALIDATION_REPORTS_DOMAIN_SPN_OBJECT_ID }}" >> $GITHUB_ENV
 
       - name: Configure Terraform Backend
         uses: ./.github/actions/configure-terraform-backend
