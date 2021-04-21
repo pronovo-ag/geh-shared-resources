@@ -20,7 +20,7 @@ on:
   workflow_dispatch: {}
 
 env:
-  CSPROJ_FILE_PATH: 'src/GreenEnergyHub.Shared/GreenEnergyHub.Shared.csproj'
+  CSPROJ_FILE_PATH: 'src/GreenEnergyHub.Conversion/GreenEnergyHub.Conversion.csproj'
   SOLUTION_FILE_PATH: 'GreenEnergyHub.Shared.sln'
   DOTNET_VERSION: '5.0'
 
@@ -37,7 +37,7 @@ jobs:
           github_token: ${{ github.token }}
           paths: '[
             "build/**",
-            "src/GreenEnergyHub.Shared/**",
+            "src/GreenEnergyHub.*/**",
             ".github/workflows/green-energy-hub-shared-ci.yml",
             ".github/actions/dotnet-build-and-test/**"
           ]'
@@ -56,8 +56,14 @@ jobs:
         with:
           dotnet-version: ${{ env.DOTNET_VERSION }}
 
-      - name: Build and test project
+      - name: Build and test conversion
         uses: ./.github/actions/dotnet-build-and-test
         with:
-          CSPROJ_FILE_PATH: ${{ env.CSPROJ_FILE_PATH }}
+          CSPROJ_FILE_PATH: 'src/GreenEnergyHub.Conversion/GreenEnergyHub.Conversion.csproj'
+          SOLUTION_FILE_PATH: ${{ env.SOLUTION_FILE_PATH }}
+
+      - name: Build and test ebix
+        uses: ./.github/actions/dotnet-build-and-test
+        with:
+          CSPROJ_FILE_PATH: 'src/GreenEnergyHub.DkEbix/GreenEnergyHub.DkEbix.csproj'
           SOLUTION_FILE_PATH: ${{ env.SOLUTION_FILE_PATH }}
