@@ -6,6 +6,7 @@
       <IsPackable>false</IsPackable>
       <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
       <RunAnalyzersDuringBuild>true</RunAnalyzersDuringBuild>
+      <RootNamespace>GreenEnergyHub.Conversion.Tests</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
