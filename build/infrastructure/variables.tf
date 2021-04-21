@@ -29,3 +29,38 @@ variable "organisation" {
   type          = string
   description   = "Organisation that is running the infrastructure code"
 }
+
+variable "aggregations_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the aggregations domain service principal."
+}
+
+variable "charges_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the charges domain service principal."
+}
+
+variable "market_roles_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the market roles domain service principal."
+}
+
+variable "timeseries_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the time series domain service principal."
+}
+
+variable "metering_point_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the metering point domain service principal."
+}
+
+variable "post_office_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the post office domain service principal."
+}
+
+variable "validation_reports_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the validation reports domain service principal."
+}
