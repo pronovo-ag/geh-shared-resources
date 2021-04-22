@@ -11,7 +11,7 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-name: Green Energy Hub Shared CI
+name: Green Energy Hub Conversion CI
 
 on:
   pull_request:
@@ -37,7 +37,7 @@ jobs:
           github_token: ${{ github.token }}
           paths: '[
             "build/**",
-            "src/GreenEnergyHub.*/**",
+            "src/GreenEnergyHub.Conversion/**",
             ".github/workflows/green-energy-hub-conversion-ci.yml",
             ".github/actions/dotnet-build-and-test/**"
           ]'
