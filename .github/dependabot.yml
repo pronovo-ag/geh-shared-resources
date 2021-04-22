@@ -5,6 +5,10 @@
 version: 2
 updates:
   - package-ecosystem: "nuget"
-    directory: "/src/GreenEnergyHub.Shared"
+    directory: "/src"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "/test"
     schedule:
       interval: "weekly"
