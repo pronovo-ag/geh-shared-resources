@@ -5,6 +5,10 @@
 version: 2
 updates:
   - package-ecosystem: "nuget"
-    directory: "/source/hello-world"
+    directory: "/src"
+    schedule:
+      interval: "weekly"
+  - package-ecosystem: "nuget"
+    directory: "/test"
     schedule:
       interval: "weekly"
