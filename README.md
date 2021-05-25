@@ -1,5 +1,13 @@
 # Shared Resources
 
+- [Intro](#intro)
+- [Architecture](#architecture)
+- [Domain Roadmap](#domain-roadmap)
+- [Getting Started](#getting-started)
+    - [Setting up the domain](#setting-up-the-domain)
+    - [Using the shared resources](#using-the-shared-resources)
+- [Where can I get more help](#where-can-i-get-more-help)
+
 ## Intro
 
 This domain will contain shared components of infrastructure, as well as code which we want to "centralize".
@@ -19,7 +27,13 @@ In this program increment we are working towards:
 
 ## Getting Started
 
+### Setting up the domain
+
 [Read here how to get started](https://github.com/Energinet-DataHub/green-energy-hub/blob/main/docs/getting-started.md).
+
+### Using the shared resources
+
+asdasd
 
 ## Where can I get more help?
 
