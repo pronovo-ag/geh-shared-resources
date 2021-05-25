@@ -34,7 +34,7 @@ In this program increment we are working towards:
 
 ### Shared SQL Server
 
-The Shared SQL Server is a shell that other domains can add databases into.
+The Shared SQL Server is an empty server that other domains can add databases into.
 
 To get started using the SQL Server, you will need to refer to the server as a Terraform Data Resource.
 
