@@ -4,9 +4,9 @@
 - [Architecture](#architecture)
 - [Domain Roadmap](#domain-roadmap)
 - [Getting Started](#getting-started)
-  - [Setting up the domain](#setting-up-the-domain)
+    - [Setting up the domain](#setting-up-the-domain)
 - [Using the shared resources](#using-the-shared-resources)
-  - [Shared SQL Server](#shared-sql-server)
+    - [Shared SQL Server](#shared-sql-server)
 - [Where can I get more help](#where-can-i-get-more-help)
 
 ## Intro
