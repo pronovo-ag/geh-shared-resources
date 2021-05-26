@@ -86,6 +86,14 @@ module "kv" {
       certificate_permissions = []
       key_permissions         = []
       storage_permissions     = []
+    },
+    {
+      tenant_id               = data.azurerm_client_config.current.tenant_id
+      object_id               = var.testing_domain_spn_object_id
+      secret_permissions      = ["set", "get", "list"]
+      certificate_permissions = []
+      key_permissions         = []
+      storage_permissions     = []
     }
   ]
 }

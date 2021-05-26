@@ -64,3 +64,8 @@ variable "validation_reports_domain_spn_object_id" {
   type          = string
   description   = "The object id of the validation reports domain service principal."
 }
+
+variable "testing_domain_spn_object_id" {
+  type          = string
+  description   = "The object id of the testing domain service principal."
+}
